@@ -38,7 +38,7 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="numberPassword"
             android:text=""
             android:ems="10"
             android:id="@+id/edit_pass" android:hint="Enter Your Password"/>
