@@ -5,25 +5,66 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/pink"
         tools:context=".Relative_Layout">
     <TextView
-            android:id="@+id/big"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Full Name"
-            android:textSize="20dp"
-            android:layout_centerInParent="true"
-            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
     />
 
     <TextView
-            android:id="@+id/small"
+            android:id="@+id/id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your ID"
-            android:textSize="20dp"
+            android:textSize="20sp"
+            android:layout_margin="40dp"
+            android:layout_below="@id/edit_name"
             android:layout_centerHorizontal="true"
-            android:background="@color/magenta"
     />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/name"
+            android:ems="10"
+            android:id="@+id/edit_name"
+            android:hint="Enter Your Full Name" />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:layout_margin="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/id"
+            android:hint="Enter Your ID"
+            android:id="@+id/edit_id"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edit_id">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/magenta"
+                android:layout_margin="20dp"
+                android:text="SUNBMIT"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/magenta"
+                android:layout_margin="20dp"
+                android:text="RESET"/>
+    </LinearLayout>
 
 </RelativeLayout>
