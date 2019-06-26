@@ -82,4 +82,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/toast" app:layout_constraintStart_toStartOf="@+id/dob" android:layout_marginStart="116dp"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="Go to Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

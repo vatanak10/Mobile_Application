@@ -51,5 +51,10 @@ class MainActivity : AppCompatActivity() {
             var intent =  Intent(this, Toast_Message::class.java)
             startActivity(intent)
         }
+
+        layout.setOnClickListener {
+            var intent =  Intent(this, Linear_Layout::class.java)
+            startActivity(intent)
+        }
     }
 }

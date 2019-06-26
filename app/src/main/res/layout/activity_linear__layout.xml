@@ -25,7 +25,7 @@
             android:inputType="textPersonName"
             android:text=""
             android:ems="10"
-            android:id="@+id/edit_user"/>
+            android:id="@+id/edit_user" android:hint="Enter Your Username"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,19 +41,31 @@
             android:inputType="textPersonName"
             android:text=""
             android:ems="10"
-            android:id="@+id/edit_pass"/>
+            android:id="@+id/edit_pass" android:hint="Enter Your Password"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
         <Button
                 android:text="SUBMIT"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:background="@color/magenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/submit"/>
         <Button
                 android:text="RESET"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:background="@color/magenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/reset"/>
     </LinearLayout>
+    <Button
+            android:text="Continue to Relative Layout"
+            android:layout_width="match_parent"
+            android:background="@color/pink"
+            android:layout_height="wrap_content" android:id="@+id/next_layout" android:onClick="next"/>
 </LinearLayout>
