@@ -15,4 +15,9 @@ class Linear_Layout : AppCompatActivity() {
         var intent = Intent(this, Relative_Layout::class.java)
         startActivity(intent)
     }
+
+    fun frame(view: View){
+        var intent = Intent(this, Frame_Layout::class.java)
+        startActivity(intent)
+    }
 }

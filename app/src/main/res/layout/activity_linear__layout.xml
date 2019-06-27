@@ -68,4 +68,10 @@
             android:layout_width="match_parent"
             android:background="@color/pink"
             android:layout_height="wrap_content" android:id="@+id/next_layout" android:onClick="next"/>
+    <Button
+            android:text="Continue to Frame Layout"
+            android:layout_width="match_parent"
+            android:background="@color/pink"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" android:id="@+id/frame_layout" android:onClick="frame"/>
 </LinearLayout>
