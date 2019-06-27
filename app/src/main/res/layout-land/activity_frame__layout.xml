@@ -12,12 +12,14 @@
             android:layout_height="match_parent"
             android:background="@drawable/wonyoung"
             android:visibility="visible"
+            android:onClick="switchImage"
             android:id="@+id/wonyoung"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/wonyoung2"
             android:visibility="gone"
+            android:onClick="switchImage"
             android:id="@+id/wonyoung2"/>
 
 </FrameLayout>
