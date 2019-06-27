@@ -13,7 +13,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".Frame_Layout">
+        <activity android:name=".Frame_Layout" >
         </activity>
         <activity android:name=".Tic_Tac_Toe">
         </activity>
