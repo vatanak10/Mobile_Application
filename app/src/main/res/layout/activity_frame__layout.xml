@@ -28,13 +28,6 @@
         <ImageView
                 android:layout_width="380dp"
                 android:layout_height="550dp"
-                android:background="@drawable/yuri"
-                android:visibility="gone"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/yuri"/>
-        <ImageView
-                android:layout_width="380dp"
-                android:layout_height="550dp"
                 android:background="@drawable/yena"
                 android:visibility="gone"
                 android:layout_gravity="center_horizontal"
@@ -46,6 +39,13 @@
                 android:visibility="gone"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/wonyoung3"/>
+        <ImageView
+                android:layout_width="380dp"
+                android:layout_height="550dp"
+                android:background="@drawable/yuri"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/yuri"/>
         <ImageView
                 android:layout_width="380dp"
                 android:layout_height="550dp"
