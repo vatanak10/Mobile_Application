@@ -12,8 +12,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        <activity android:name=".Frame_Layout" >
+        <activity android:name=".Intent">
+        </activity>
+        <activity android:name=".concept_of_activity">
+        </activity>
+        <activity android:name=".Frame_Layout">
         </activity>
         <activity android:name=".Tic_Tac_Toe">
         </activity>

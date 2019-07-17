@@ -56,5 +56,10 @@ class MainActivity : AppCompatActivity() {
             var intent =  Intent(this, Linear_Layout::class.java)
             startActivity(intent)
         }
+
+        cycle.setOnClickListener {
+            var intent = Intent(this, concept_of_activity::class.java)
+            startActivity(intent)
+        }
     }
 }
