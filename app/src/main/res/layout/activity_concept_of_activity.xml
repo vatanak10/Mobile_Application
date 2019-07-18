@@ -7,4 +7,18 @@
         android:layout_height="match_parent"
         tools:context=".concept_of_activity">
 
+    <Button
+            android:text="GO TO INTENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intent" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:onClick="goToIntent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/word" android:layout_marginTop="208dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="96dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="Enter any word"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

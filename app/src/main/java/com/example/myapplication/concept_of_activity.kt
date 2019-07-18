@@ -1,10 +1,22 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_concept_of_activity.*
 
 class concept_of_activity : AppCompatActivity() {
+
+    fun goToIntent(view:View){
+        var intent = Intent(this, Intent_Screen::class.java)
+
+        var str = word.text.toString()
+        intent.putExtra("xyz", str)
+
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
