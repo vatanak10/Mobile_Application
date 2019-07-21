@@ -18,6 +18,39 @@ class concept_of_activity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun startBundle(v:View){
+        var intent = Intent(this, Intent_Screen::class.java)
+
+        var name = word.text.toString()
+        var bundle = Bundle()
+        bundle.putString("name", name)
+        bundle.putString("school", "KIT")
+
+        intent.putExtras(bundle)
+        startActivity(intent)
+    }
+
+    fun startActivity(v:View){
+        var string = word.text.toString()
+        var intent = Intent()
+
+        intent.action = Intent.ACTION_SEND
+        intent.putExtra(Intent.EXTRA_TEXT,string)
+        intent.type = "text/plain"
+
+        startActivity(Intent.createChooser(intent, "Share to:"))
+    }
+
+    fun startImage(vi:View){
+        var intent = Intent(this, Intent_Screen::class.java)
+        var bundles = Bundle()
+
+        bundles.putInt("image",R.drawable.chaeyon)
+        intent.putExtras(bundles)
+
+        startActivity(intent)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_concept_of_activity)

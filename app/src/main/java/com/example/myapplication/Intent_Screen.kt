@@ -12,5 +12,17 @@ class Intent_Screen : AppCompatActivity() {
 
         var str = intent.getStringExtra("xyz")
         textView3.text = "$str"
+
+        var bundle = intent.extras
+        var name = bundle?.get("name")
+        var school = bundle?.get("school")
+
+        detail.text = "Name : $name , School : $school"
+
+        var bundles = intent.extras
+        var pic: Int? = bundles?.getInt("image")
+        if (pic != null) {
+            imageView.setImageResource(pic)
+        }
     }
 }
