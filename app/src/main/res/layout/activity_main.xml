@@ -94,4 +94,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/cycle" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="12dp"
             android:layout_marginBottom="80dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="startActivityForResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forresult"
+            android:layout_marginBottom="80dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="184dp"
+            android:onClick="forResult"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,6 +56,15 @@ class concept_of_activity : AppCompatActivity() {
         setContentView(R.layout.activity_concept_of_activity)
     }
 
+    fun goHome(v:View){
+        var i = Intent()
+        var username = word.text.toString()
+
+        i.putExtra("Data", username)
+        setResult(RESULT_OK, i)
+        finish()
+    }
+
     override fun onStart() {
         super.onStart()
         Toast.makeText(this, "Started", Toast.LENGTH_SHORT).show()

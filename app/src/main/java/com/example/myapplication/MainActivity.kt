@@ -5,6 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
 import android.view.View
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -60,6 +61,20 @@ class MainActivity : AppCompatActivity() {
         cycle.setOnClickListener {
             var intent = Intent(this, concept_of_activity::class.java)
             startActivity(intent)
+        }
+    }
+
+    fun forResult(v:View){
+        var i = Intent(this, concept_of_activity::class.java)
+        startActivityForResult(i, 2)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode==2){
+            var str = data?.getStringExtra("Data")
+            textView4.text = str
+            Toast.makeText(this, "Message is: $str",Toast.LENGTH_LONG).show()
         }
     }
 }
