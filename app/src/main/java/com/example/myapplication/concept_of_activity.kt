@@ -9,6 +9,24 @@ import kotlinx.android.synthetic.main.activity_concept_of_activity.*
 
 class concept_of_activity : AppCompatActivity() {
 
+    fun startCalculator(view:View){
+        var intent = Intent(this, Calculator_forResult::class.java)
+        var numA = num1.text.toString().toInt()
+        var numB = num2.text.toString().toInt()
+        Toast.makeText(this, "0", Toast.LENGTH_LONG).show()
+        intent.putExtra("num1", numA)
+        intent.putExtra("num2", numB)
+        startActivityForResult(intent, 4)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode==4){
+            var res = data?.getStringExtra("num3")
+            finalRes.text = "The result is : $res"
+        }
+    }
+
     fun goToIntent(view:View){
         var intent = Intent(this, Intent_Screen::class.java)
 

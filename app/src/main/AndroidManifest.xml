@@ -12,6 +12,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Calculator_forResult">
+        </activity>
         <activity android:name=".Intent_Screen">
         </activity>
         <activity android:name=".Intent">
