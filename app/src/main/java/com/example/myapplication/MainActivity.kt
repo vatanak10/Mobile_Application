@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        gesture.setOnClickListener {
+            var intent = Intent(this, Gestures::class.java)
+            startActivity(intent)
+        }
+
         number.setOnClickListener {
             var str = editText.text
             var consonants:Int = 0

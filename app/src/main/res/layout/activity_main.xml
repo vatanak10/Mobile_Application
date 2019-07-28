@@ -102,4 +102,11 @@
             android:layout_marginBottom="80dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="184dp"
             android:onClick="forResult"/>
+    <Button
+            android:text="GO TO GESTURE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gesture" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="36dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
