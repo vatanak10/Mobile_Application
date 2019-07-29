@@ -109,4 +109,11 @@
             android:id="@+id/gesture" android:layout_marginTop="32dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="36dp"/>
+    <Button
+            android:text="GO TO CHECKBOX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="184dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

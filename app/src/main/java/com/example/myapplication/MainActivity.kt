@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        checkbox.setOnClickListener {
+            var intent = Intent(this, CheckBox::class.java)
+            startActivity(intent)
+        }
+
         gesture.setOnClickListener {
             var intent = Intent(this, Gestures::class.java)
             startActivity(intent)
