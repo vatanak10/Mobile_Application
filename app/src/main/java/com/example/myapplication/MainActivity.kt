@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        checkbox.setOnClickListener {
-            var intent = Intent(this, CheckBox::class.java)
+        regex.setOnClickListener {
+            var intent = Intent(this, Regex::class.java)
             startActivity(intent)
         }
 
