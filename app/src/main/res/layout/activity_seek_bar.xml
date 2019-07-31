@@ -40,10 +40,32 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.0"/>
     <Button
-            android:text="GET COLOR"
+            android:text="ELEMENT TWO"
+            android:id="@+id/element2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/mix" android:layout_marginTop="492dp"
+            android:layout_marginTop="440dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="156dp"/>
+            android:layout_marginStart="220dp" android:onClick="two"/>
+    <Button
+            android:text="ELEMENT FOUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/element4" android:layout_marginTop="528dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="220dp" android:onClick="four"/>
+    <Button
+            android:text="ELEMENT THREE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/element3" android:layout_marginTop="528dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp" android:onClick="three"/>
+    <Button
+            android:text="ELEMENT ONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/element1" android:layout_marginTop="440dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp" android:onClick="one"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
