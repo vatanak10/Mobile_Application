@@ -20,5 +20,10 @@ class Regex : AppCompatActivity() {
             var intent = Intent(this, SeekBar::class.java)
             startActivity(intent)
         }
+
+        radiobutton.setOnClickListener {
+            var intent = Intent(this, Radio_Button::class.java)
+            startActivity(intent)
+        }
     }
 }
