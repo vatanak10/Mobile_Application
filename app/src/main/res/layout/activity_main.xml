@@ -116,4 +116,10 @@
             android:id="@+id/regex" android:layout_marginTop="32dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="184dp"/>
+    <Button
+            android:text="GO TO SERVICE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/service" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="36dp"
+            android:layout_marginTop="104dp" app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
