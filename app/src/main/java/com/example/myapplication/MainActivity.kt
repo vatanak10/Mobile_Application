@@ -87,4 +87,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Message is: $str",Toast.LENGTH_LONG).show()
         }
     }
+
+    fun service(v:View){
+        startActivity(Intent(this, Foreground_service::class.java))
+    }
 }

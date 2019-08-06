@@ -7,4 +7,25 @@
         android:layout_height="match_parent"
         tools:context=".Foreground_service">
 
+    <Button
+            android:text="Start Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start" android:layout_marginTop="180dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="80dp" android:onClick="Music"/>
+    <Button
+            android:text="Stop Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop" android:layout_marginTop="180dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="80dp" android:onClick="Music"/>
+    <Button
+            android:text="StartNewctivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7" android:layout_marginTop="340dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="128dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
