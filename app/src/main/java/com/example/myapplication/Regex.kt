@@ -25,5 +25,9 @@ class Regex : AppCompatActivity() {
             var intent = Intent(this, Radio_Button::class.java)
             startActivity(intent)
         }
+
+        switch.setOnClickListener {
+
+        }
     }
 }

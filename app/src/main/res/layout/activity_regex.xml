@@ -27,4 +27,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/radiobutton" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             android:layout_marginTop="156dp" app:layout_constraintTop_toTopOf="parent"/>
+    <Switch
+            android:text="Switch    "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="176dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="256dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
