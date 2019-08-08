@@ -31,7 +31,21 @@
             android:text="Switch    "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="176dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="256dp"/>
+            android:id="@+id/the_switch" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="160dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="236dp"
+
+    />
+    <ScrollView
+            android:layout_width="395dp"
+            android:layout_height="511dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/scroll">
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="423dp"
+                tools:layout_editor_absoluteX="181dp" android:id="@+id/textScroll"/>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
