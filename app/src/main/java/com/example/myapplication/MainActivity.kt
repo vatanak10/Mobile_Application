@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        mediaplayer.setOnClickListener {
+            startActivity(Intent(this, media_player::class.java))
+        }
+
         regex.setOnClickListener {
             var intent = Intent(this, Regex::class.java)
             startActivity(intent)

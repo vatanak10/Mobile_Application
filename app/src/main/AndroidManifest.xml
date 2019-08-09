@@ -12,6 +12,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".media_player">
+        </activity>
         <activity android:name=".Foreground_service">
         </activity>
         <activity android:name=".Radio_Button">
@@ -51,8 +53,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <service android:name=".MusicService"
-                 android:enabled="true"/>
+
+        <service
+                android:name=".MusicService"
+                android:enabled="true"/>
     </application>
 
 </manifest>
