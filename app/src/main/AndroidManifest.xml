@@ -12,6 +12,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Broadcast">
+        </activity>
+
+        <service
+                android:name=".AsyncTask_Service"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+
+        <activity android:name=".AsyncTask">
+        </activity>
+        <activity android:name=".IntentService">
+        </activity>
         <activity android:name=".media_player">
         </activity>
         <activity android:name=".Foreground_service">
@@ -56,6 +69,9 @@
 
         <service
                 android:name=".MusicService"
+                android:enabled="true"/>
+        <service
+                android:name=".IntentService_Service"
                 android:enabled="true"/>
     </application>
 
